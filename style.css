@@ -32,7 +32,7 @@ h4 a {
   color: white;
 }
 
-h1 {
+h1, h2 {
   font-size: 50px;
   font-weight: 800;
   margin: 14px 0 20px;
@@ -42,6 +42,12 @@ h3 {
   font-size: 30px;
   font-weight: bold;
   margin: 0 0 35px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px 0;
 }
 
 a.cta, button.cta {
@@ -137,13 +143,16 @@ nav ul li a {
   line-height: 30px;
 }
 
+.more-info {
+  text-align: center;
+}
+
 /**
-<nav>
-  <a href="/"><h1>THE GANG</h1></a>
-  <ul>
-    <li><a href="">MORE INFO</a></li>
-    <li><a href="">THE STORY</a></li>
-    <li><a href="">SIGN UP</a></li>
-  </ul>
-</nav>
+<div id="more-info">
+    <div class="wrapper">
+      <h1>Join Our Fan Club</h1>
+      <h3>Every week we have <span class="highlight">a party</span>. If you want to join us then join our fan club. Members will also receive pictures of us in all kinds of shapes and sizes. Cool huh?</h3>
+      <button class="cta" href="#more-info">Sign Me Up</button>
+    </div>
+  </div>
 **/

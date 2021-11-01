@@ -92,3 +92,58 @@ div.eish-guy {
   bottom: 30px;
   right: 10%;
 }
+
+nav {
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0,0,0,.20);
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  display: block;
+  width: 300px;
+  height: 40px;
+  position: absolute; top: 50%; left: 0;
+  margin-top: -20px;
+  margin-left: 30px;
+  background: url(images/logo.png) no-repeat 0 0;
+  background-size: 100%;
+}
+
+nav ul {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: right;
+}
+
+nav ul li a {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+  padding: 35px 10px;
+  line-height: 30px;
+}
+
+/**
+<nav>
+  <a href="/"><h1>THE GANG</h1></a>
+  <ul>
+    <li><a href="">MORE INFO</a></li>
+    <li><a href="">THE STORY</a></li>
+    <li><a href="">SIGN UP</a></li>
+  </ul>
+</nav>
+**/

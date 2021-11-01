@@ -1,3 +1,94 @@
-img {
-  height: 400px; /*temporary*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+header {
+  background-color: #007FFF;
+  min-height: 100vh;
+  padding: 50px 20px;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+div.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h4 a {
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 14px 0 20px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 35px;
+}
+
+a.cta, button.cta {
+  font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background: #007FFF;
+	display: inline-block;
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a.cta.alt, button.cta.alt {
+  background-color: #FFD400;
+	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
+  color: #111
+}
+
+div.circle-guy {
+  background: url(images/circle-guy.png) no-repeat 0 0;
+  background-size: 100%;
+  position: absolute;
+  width: 340px;
+  height: 400px;
+  top: 10%;
+  right: 10%;
+  transform: rotate(15deg)
+}
+
+div.hat-guy {
+  background: url(images/hat-guy.png) no-repeat 0 0;
+  background-size: 100%;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 100px;
+  right: 390px;
+}
+
+div.eish-guy {
+  background: url(images/eish-guy.png) no-repeat 0 0;
+  background-size: 100%;
+  position: absolute;
+  width: 280px;
+  height: 500px;
+  bottom: 30px;
+  right: 10%;
 }

@@ -267,6 +267,97 @@ footer a {
   color: rgba(0,0,0,.40);
 }
 
-.modal {
+.popup {
   display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup .blanket {
+  background-color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.popup .popup-content {
+  box-sizing: border-box;
+  padding: 30px 40px;
+  width: 960px;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -250px;
+}
+
+.popup h2 {
+  margin: 10px 0 20px;
+}
+
+.popup .cta {
+  margin-top: 40px;
+}
+
+.popup .close {
+  height: 80px;
+  width: 80px;
+  background: #ff3300 url(images/close.png) no-repeat center center;
+  background-size: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  text-indent: -999px;
+  cursor: pointer;
+}
+
+.popup .row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.popup .item {
+  float: left;
+  width: 415px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.popup .item:first-child {
+  margin-left: 0px;
+}
+.popup .item label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup .item input[type="text"] {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  border: 4px solid #111111;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
 }
